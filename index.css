@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Helper CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Space Mono', monospace;
+}
+
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+
+header {
+    margin: 0px auto;
+    padding: 20px 0px;
+    width: 90%;
+}
+
+header h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 50px auto;
+    width: 90%;
+}
+
+.container .row {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container .row .col-1,
+.container .row .col-2 {
+    flex: 1;
+}
+
+.image-container {
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    width: 70%;
+    margin: auto;
+}
+
+.error-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.error-info h1 {
+    font-size: 40px;
+    color: #333333;
+}
+
+.error-info p {
+    font-size: 16px;
+    letter-spacing: 2px;
+    color: #4F4F4F;
+    margin: 25px 0;
+}
+
+.error-info a.button {
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    background: #333333;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+    font-size: 14px;
+}
+
+@media (min-width: 576px) { 
+    body {
+        background: transparent;
+    }
+    header h3 {
+        text-align: left;
+    }
+    .error-info h1 {
+        font-size: 64px;
+    }
+    .error-info p {
+        font-size: 24px;
+    }
+    footer p {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) { 
+    .container,
+    header {
+        max-width: 992px;
+    }
+    .container .row {
+        flex-direction: row;
+    }
+    .error-info h1 {
+        font-size: 64px;
+    }
+
+}
+
+@media (min-width: 1200px) { 
+    .container,
+    header {
+        max-width: 1200px;
+    }
+    .container {
+        margin: 100px auto;
+    }
+}
